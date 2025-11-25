@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Futura', 'Nunito Sans', 'Trebuchet MS', Arial, sans-serif;
+    background: #F3E3D3;
+    width: 660px;
+    height: 660px;
+    overflow: hidden;
+}
+
+.container {
+    width: 660px;
+    height: 660px;
+    position: relative;
+    background: #F3E3D3;
+}
+
+.title {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1A4358;
+    text-align: right;
+    z-index: 10;
+}
+
+.subtitle {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    font-size: 11px;
+    color: #555;
+    text-align: right;
+    z-index: 10;
+}
+
+.filter-box {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 10;
+}
+
+.filter-box select {
+    font-family: 'Futura', 'Nunito Sans', 'Trebuchet MS', Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid #1A4358;
+    border-radius: 3px;
+    background: #fff;
+    color: #1A4358;
+    cursor: pointer;
+}
+
+.map-container {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container svg {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.comune {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.comune:hover {
+    opacity: 0.7;
+}
+
+.comune.hidden {
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    background: white;
+    padding: 10px 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    font-size: 11px;
+    pointer-events: none;
+    display: none;
+    z-index: 100;
+}
+
+.popup-title {
+    font-weight: 700;
+    color: #1A4358;
+    margin-bottom: 5px;
+}
+
+.popup-data {
+    color: #333;
+    line-height: 1.5;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 3px;
+}
+
+.legend span {
+    font-size: 11px;
+    color: #333;
+}
+
+.legend-bar {
+    width: 200px;
+    height: 12px;
+    border-radius: 2px;
+    background: linear-gradient(to right, #e8eff3, #1A4358);
+}
+
+.logo {
+    width: 70px;
+    margin-bottom: 5px;
+}
